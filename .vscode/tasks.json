@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run tests",
+			"type": "shell",
+			"command": "c:/Source/Repos/All2MD/.venv/Scripts/python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q"
+			],
+			"group": "test"
+		}
+	]
+}

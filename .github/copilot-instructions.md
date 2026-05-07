@@ -1,0 +1,12 @@
+- [x] Verify that the copilot-instructions.md file in the .github directory is created. (done: created at .github/copilot-instructions.md)
+- [x] Clarify Project Requirements (done: Python CLI project to convert common document formats into Markdown)
+- [x] Scaffold the Project (done: created Python package, CLI entrypoint, README, tests, and pyproject metadata)
+- [x] Customize the Project (done: implemented document-to-Markdown conversion command and converter module)
+- [x] Install Required Extensions (done: no required extensions were provided by setup info)
+- [x] Compile the Project (done: installed package, installed pytest, and verified tests passing)
+- [x] Create and Run Task (done: added and executed VS Code task Run tests)
+- [x] Launch the Project (done: skipped per user choice)
+- [x] Ensure Documentation is Complete (done: README exists and this file was cleaned of HTML comments)
+- Work through each checklist item systematically.
+- Keep communication concise and focused.
+- Follow development best practices.

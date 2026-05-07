@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "all2md"
+version = "0.1.0"
+description = "Convert documents into Markdown"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "markitdown[pdf]>=0.1.1",
+  "typer>=0.12.3",
+  "fastapi>=0.104.0",
+  "uvicorn[standard]>=0.24.0",
+  "python-multipart>=0.0.6"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=9.0.0"
+]
+
+[project.scripts]
+all2md = "all2md.cli:app"
+all2md-server = "all2md.server:app"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
