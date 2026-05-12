@@ -35,6 +35,9 @@ def _convert_with_markitdown(src: Path) -> str:
 
 def _convert_path(src: Path) -> str:
     """Convert with Docling first, then fallback to MarkItDown on failure."""
+    if src.suffix.lower() in {".md", ".markdown", ".txt"}:
+        return src.read_text(encoding="utf-8", errors="replace")
+
     try:
         return _convert_with_docling(src)
     except Exception:
