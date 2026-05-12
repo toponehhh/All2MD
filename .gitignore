@@ -7,3 +7,4 @@ venv/
 build/
 dist/
 *.md.tmp
+.local-logs/
